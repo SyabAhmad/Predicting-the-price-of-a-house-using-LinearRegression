@@ -31,9 +31,10 @@ xData = data[['number of bedrooms',
              'lot_area_renov',
              'Number of schools nearby',
              'Distance from the airport']]
+
 yData = data['Price']
 
-xTrain, xTest, yTrain, yTest = train_test_split(xData, yData, test_size=90, random_state=42)
+xTrain, xTest, yTrain, yTest = train_test_split(xData, yData, test_size=20, random_state=32)
 
 toFit = LinearRegression()
 
@@ -46,12 +47,8 @@ fitingModel = pd.DataFrame({'Actual Price': yTest, 'Prediction Price': yPredicti
 print(fitingModel.head(5))
 
 
-score1 = toFit.score(xTest,yTest)
-print("Accoracy 1",score1)
+accuracy = toFit.score(xTest,yTest)
+print("Accuracy 1",accuracy)
+
 mse = np.mean((yPrediction - yTest)**2)
 print("Mean Squared Error:", mse)
-
-
-
-
-
