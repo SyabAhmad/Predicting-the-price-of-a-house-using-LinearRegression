@@ -143,3 +143,14 @@ Mean Squared Error: 10950490800.953691
 Accuracy :  0.7306688761169409
 Mean Squared Error: 22731516330.749928
 ```
+All 4 regression algorithm completed and the best one to fit this datasets is "Random Forest Algorithm"
+
+if this repository helps you then follow me for more learning materials like this,
+
+```"""about developer"""```
+
+```Name: Syab Ahmad```
+
+```Tools: Pycharm```
+
+```Language: Python```
